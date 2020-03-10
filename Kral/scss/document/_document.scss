@@ -1,0 +1,58 @@
+/*
+
+POČET ZNAKŮ NA ŘÁDKU CCA 86 ZNAKŮ
+
+*/
+
+@import 'core/variables';
+
+.content-container {
+	max-width: 60rem;
+	margin: 0 auto;
+	background: darken($color-light ,5%);
+}
+
+.content {
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 1.25rem;
+	background: darken($color-light ,5%);
+}
+
+.container {
+	display: block;
+	position: relative;
+	&:after {
+  		content: "";
+  		background: url('../bagr.jpg') no-repeat;
+  		background-size: cover;
+  		opacity: 0.6;
+  		top: 0;
+  		left: 0;
+  		bottom: 0;
+  		right: 0;
+  		position: absolute;
+  		z-index: -1;
+	}
+}
+body {padding: 0;}
+html {
+	font-size: 1.125em;
+	line-height: 1.5;
+	background: darken($color-light ,5%);
+
+}
+
+@media only screen and (min-width: 20em) and (max-width: 40em) {
+	html {
+		line-height: 1.45;
+    	font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 19.9em) {
+	html {
+		line-height: 1.4;
+    	font-size: 1em;
+	}
+}

@@ -1,0 +1,51 @@
+/* LAYOUT
+
+	JEDNODUCHE SCHEMA
+=============================
+
+.container
+	header
+		.header_inner
+			.logo
+			.nav
+	main .content-container
+		.content
+	footer
+==============================
+*/
+
+
+@import 'core/variables';
+
+.header_main{
+	background: $color-main;
+	height: 9.375rem;
+	display: flex;
+}
+.header_inner {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pre_footer {
+	background: $color-main;
+	padding: 1.25rem;
+}
+
+.pre_footer-inner {
+	width: 55%;
+	margin: 0 auto;
+}
+
+footer {
+	background: $color-sec;
+}
+
+@media only screen and (max-width: 1399px) {
+	.pre_footer-inner {
+	width: 100%;
+	margin: 0;
+	}
+}

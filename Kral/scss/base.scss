@@ -1,0 +1,16 @@
+
+	// PARTIALS IMPORT //
+
+		@import 'document/document';	// VŠECHNY STYLY TÝKAJÍCÍ SE PŘÍMO DOKUMENTU
+		@import 'document/fonts';		// TYPOGRAFIE
+		@import 'core/variables';		// PROMĚNNÉ
+		@import 'core/helpers';		// PROMĚNNÉ
+		@import 'component/nav';		// KOMPONENTY
+		@import 'layout/layout';		// LAYOUT
+		@import 'component/footer-box'; // FOOTER KONTAKTY
+		@import 'component/button'; 	// BUTTON
+
+
+
+* { box-sizing: border-box };
+

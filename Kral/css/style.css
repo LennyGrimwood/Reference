@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*
+
+POČET ZNAKŮ NA ŘÁDKU CCA 86 ZNAKŮ
+
+*/
+/*
+	VŠECHNY PROMĚNNÉ POUŽITÉ NA WEBU
+*/
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Raleway:800&display=swap&subset=cyrillic-ext");
+.content-container {
+  max-width: 60rem;
+  margin: 0 auto;
+  background: #dde4e6; }
+
+.content {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background: #dde4e6; }
+
+.container {
+  display: block;
+  position: relative; }
+  .container:after {
+    content: "";
+    background: url("../bagr.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+
+body {
+  padding: 0; }
+
+html {
+  font-size: 1.125em;
+  line-height: 1.5;
+  background: #dde4e6; }
+
+@media only screen and (min-width: 20em) and (max-width: 40em) {
+  html {
+    line-height: 1.45;
+    font-size: 1em; } }
+@media only screen and (max-width: 19.9em) {
+  html {
+    line-height: 1.4;
+    font-size: 1em; } }
+/*
+Seting basic document typography
+================================
+
+Main Font pro headings apod Raleway
+Complementary font pro text PT Sans
+
+*/
+/*
+	VŠECHNY PROMĚNNÉ POUŽITÉ NA WEBU
+*/
+body,
+input,
+select,
+textarea,
+button {
+  font-family: 'PT Sans', sans-serif;
+  color: #2B2118;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  font-size: 2rem;
+  color: #0D457A; }
+
+h1 {
+  font-size: 2.5rem; }
+
+a {
+  text-decoration: none;
+  color: #214599; }
+
+/*
+	VŠECHNY PROMĚNNÉ POUŽITÉ NA WEBU
+*/
+.tx-c {
+  text-align: center; }
+
+.pl-0 {
+  padding-left: 0; }
+
+/*
+	STYLY PRO NAVIGACI
+*/
+.logo {
+  margin-right: 6rem; }
+
+.nav {
+  font-size: 0.9rem;
+  list-style: none;
+  text-transform: uppercase;
+  margin-left: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  background: #0D457A;
+  margin-bottom: 0; }
+
+.nav__item {
+  color: #2B2118;
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-bottom: 3px solid transparent; }
+  .nav__item:hover {
+    border-bottom: 3px solid #F0B823;
+    transition: all 0.3s ease-in;
+    color: #ceb9a7; }
+
+.active {
+  border-bottom: 3px solid #F0B823;
+  transition: all 0.3s ease-in;
+  color: #ceb9a7; }
+
+@media only screen and (min-width: 1039px) {
+  .nav {
+    font-size: 1rem; } }
+@media only screen and (max-width: 850px) {
+  .logo {
+    margin-right: 2rem; }
+
+  .nav__item {
+    margin-left: 0.25rem;
+    font-size: 0.8rem; } }
+@media only screen and (max-width: 480px) {
+  /*.header_inner {
+  flex-direction:column;
+  text-align: center;
+  }
+  */
+  .nav__item {
+    margin-left: 0px;
+    margin-bottom: 0.15rem; } }
+/* LAYOUT
+
+	JEDNODUCHE SCHEMA
+=============================
+
+.container
+	header
+		.header_inner
+			.logo
+			.nav
+	main .content-container
+		.content
+	footer
+==============================
+*/
+/*
+	VŠECHNY PROMĚNNÉ POUŽITÉ NA WEBU
+*/
+.header_main {
+  background: #0D457A;
+  height: 9.375rem;
+  display: flex; }
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pre_footer {
+  background: #0D457A;
+  padding: 1.25rem; }
+
+.pre_footer-inner {
+  width: 55%;
+  margin: 0 auto; }
+
+footer {
+  background: #214599; }
+
+@media only screen and (max-width: 1399px) {
+  .pre_footer-inner {
+    width: 100%;
+    margin: 0; } }
+.wrapper {
+  display: flex;
+  color: #ceb9a7; }
+  .wrapper h2 {
+    color: #ceb9a7; }
+  .wrapper .box {
+    padding: 0.5rem;
+    width: calc(1/2*100% - (1 - 1/2)*10px); }
+    .wrapper .box label {
+      font-weight: bold; }
+    .wrapper .box a {
+      color: #ceb9a7; }
+  .wrapper .box__mail {
+    font-size: 1.5rem; }
+    .wrapper .box__mail li {
+      list-style: none; }
+    .wrapper .box__mail a:hover {
+      color: #F0B823; }
+  .wrapper .box__contact-form {
+    font-size: 1.5rem; }
+    .wrapper .box__contact-form input, .wrapper .box__contact-form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem; }
+      .wrapper .box__contact-form input:focus, .wrapper .box__contact-form textarea:focus {
+        outline: 2px solid #F0B823; }
+  .wrapper .fa-phone, .wrapper .fa-envelope {
+    margin-right: 1.25rem;
+    color: #F0B823; }
+
+@media only screen and (max-width: 760px) {
+  .wrapper {
+    flex-direction: column; }
+
+  .box {
+    width: 100% !important; }
+
+  .pre_footer-inner {
+    width: 100% !important; } }
+.btn {
+  font-family: "Raleway", sans-serif;
+  padding: 1.25rem;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.btn-primary {
+  background: #214599;
+  border: 2px solid #F0B823; }
+  .btn-primary:hover {
+    background: #F0B823;
+    transition: all 0.3s ease-in; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */

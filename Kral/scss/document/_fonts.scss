@@ -1,0 +1,41 @@
+/*
+Seting basic document typography
+================================
+
+Main Font pro headings apod Raleway
+Complementary font pro text PT Sans
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Raleway:800&display=swap&subset=cyrillic-ext');
+@import 'core/variables';
+
+body,
+input,
+select,
+textarea,
+button {
+  font-family: 'PT Sans', sans-serif;
+  color: $color-font;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  font-size: 2rem;
+  color:$color-main;
+}
+
+h1{
+	font-size: 2.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: $color-sec;
+}
+
+
